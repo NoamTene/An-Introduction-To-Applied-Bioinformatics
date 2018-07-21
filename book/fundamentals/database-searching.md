@@ -529,7 +529,7 @@ There is not a hard-and-fast rule for whether false positives or false negatives
 
 ### Interpreting alignment scores in context <link src="a0nqBH"/>
 
-In this section, we are going to learn about how to interpret alignment scores by empirically determining if a pairwise alignment that we obtain is better than we would expect if the pair of sequences were working with were definitely not homologous. For a given pair of sequences that we want to align, we're first going to align them and compute the score of the alignment. We're then going to align many pairs of sequences that are similar to the query and reference, but that we know are not homologous. We'll do this by shuffling or randomizing the order of the bases in the query sequences, and performing another pairwise alignment.
+In this section, we are going to learn about how to interpret alignment scores by empirically determining if a pairwise alignment that we obtain is better than we would expect if the pair of sequences we're working with were definitely not homologous. For a given pair of sequences that we want to align, we're first going to align them and compute the score of the alignment. We're then going to align many pairs of sequences that are similar to the query and reference, but that we know are not homologous. We'll do this by shuffling or randomizing the order of the bases in the query sequences, and performing another pairwise alignment.
 
 First, we'll define a function that can generate random sequences for us. This will take a scikit-bio sequence object (either ``skbio.DNA``, ``skbio.RNA``, or ``skbio.Protein``) and a length, and it will randomly generate a sequence of that type and length for us.
 
